@@ -32,6 +32,10 @@ sudo a2enmod lua setenvif
 sudo apache2ctl configtest && sudo apache2ctl graceful
 ```
 
+# Security Consideration
+
+To avoid the unintended exposure of the secret used for signing the JWT token, ensure that the configuration file containing the `SetEnv-If` directive is not accessible by any unnecessary user on the server.
+
 # Acknowledgments 
 
 I would like to express my gratitude to [Egor Skriptunoff](https://github.com/Egor-Skriptunoff/) for creating the [`pure_lua_SHA`](https://github.com/Egor-Skriptunoff/pure_lua_SHA) library that plays a crucial role in the development of jwt_signer. I am truly thankful for the hard work and the open-source nature of the library, which has allowed me to build upon their foundation and achieve my project's objectives.

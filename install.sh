@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-INSTALL_PATH=/usr/local/lib/jwt_auth_agent/
+INSTALL_PATH=/usr/local/lib/jwt_signer/
 mkdir -p "${INSTALL_PATH}"
 cp jwt_signer.lua sha2.lua "${INSTALL_PATH}"

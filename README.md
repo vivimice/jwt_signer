@@ -17,7 +17,7 @@ sudo ./install.sh
 ## Configure
 
 ```apache
-LuaHookAuthChecker /usr/local/lib/jw_signer/jwt_signer.lua sign
+LuaHookAuthChecker /usr/local/lib/jwt_signer/jwt_signer.lua sign
 SetEnvIf Host .*   JWT_SIGNER_SECRET=your-256-bit-secret
 ```
 
